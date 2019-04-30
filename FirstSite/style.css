@@ -131,7 +131,7 @@ input[type="text"] {
     width: 317px;
     height: 38px;
     padding-left: 16px;
-    padding-right: 40px;
+    padding-right: 52px;
     border-radius: 0 3px 3px 0;
     outline: none;
     box-sizing: border-box;
@@ -885,8 +885,10 @@ footer {
     min-height: 46px;
     border-radius: 23px 0 0 23px;
     padding-left: 28px;
+    padding-right: 26px;
     background-color: #e1e1e1;
     border: none;
+    outline: none;
 }
 
 .subscribe_form button {
@@ -899,6 +901,7 @@ footer {
     border: none;
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
+    outline: none;
 }
 
 .lable {
