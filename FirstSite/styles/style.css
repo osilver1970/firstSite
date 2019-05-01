@@ -217,7 +217,7 @@ input[type="text"]:focus {
 }
 
 .bunner-back {
-    background-image: url(img/back-b.jpg);
+    background-image: url(../img/back-b.jpg);
     height: 100%;
     background-position: 0 -51px;
     display: flex;
@@ -559,7 +559,7 @@ footer {
 .img {
     width: 767px;
     height: 529px;
-    background: url(img/Layer_38.jpg);
+    background: url(../img/Layer_38.jpg);
     position: relative;
 }
 
@@ -651,7 +651,7 @@ footer {
     position: absolute;
     width: 767px;
     height: 529px;
-    background-image: url(img/Layer_39.png);
+    background-image: url(../img/Layer_39.png);
     background-repeat: no-repeat;
 }
 
@@ -746,7 +746,7 @@ footer {
     width: 100%;
     min-height: 438px;
     margin-top: 97px;
-    background-image: url(img/Rectangle_9_copy.png), url(img/Layer_41.jpg);
+    background-image: url(../img/Rectangle_9_copy.png), url(../img/Layer_41.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
