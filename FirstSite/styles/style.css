@@ -992,13 +992,11 @@ footer {
 
 
 
-option[value="0"] {
-    color: #ef5b70;
+.catalog-select option {
+    color: #6f6e6e;
     font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-left: 2px solid #ef5b70;
-    border-bottom: 1px solid #ebebeb;
+    font-weight: 400;
+    border-color: #;
 }
 
 .select-aside {
@@ -1006,3 +1004,34 @@ option[value="0"] {
 }
 
 
+
+.catalog-select {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url("../img/img-2/arrow_black.png");
+    background-repeat: no-repeat;
+    background-position: 222px;
+    padding: 0 5px;
+    width: 100%;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-select:focus {
+    color: #ef5b70;
+    border-bottom: 2px solid #ef5b70;
+}
+
+
+
+
+.wrapper {
+    margin-top: 25px;
+}
