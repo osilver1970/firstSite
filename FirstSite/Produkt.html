@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="styles/norm.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
+    
 </head>
 
 <body>
     <header class="header">
         <div class="container header-flex">
             <div class="header-left">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo-img" src="img/logo.png" alt="logo">
                     BRAN<span class="logo-d">D</span>
                 </a>
@@ -62,27 +63,88 @@
                     <ul class="sub-menu__menu">
                         <li class="sub-menu__list"><a href="#" class="sub-menu__link">Home</a>&thinsp;/</li>
                         <li class="sub-menu__list"><a href="#" class="sub-menu__link">&thinsp;Men</a>&thinsp;/</li>
-                        <li class="sub-menu__list"><a href="#" class="sub-menu__link">&thinsp;New Arrivals</a></li>
+                        <li class="sub-menu__list"><a href="#" class="sub-menu__link active">&thinsp;New Arrivals</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container catalog">
-            <div class="search-parameters">
-                <section class="container">
-                    <input id="range" type="range" value="10" step="0.1" />
-                    <br>
-                    <p>Значение RANGE:
-                        <output name="result" for="range">10</output>
-                    </p>
-                </section>
+            <div class="content">
 
+                <form oninput="result.value=(range.value)" action="#">
+                    <div class="search-parameters">
+
+                        <fieldset class="ref-list">
+                            <legend class="search-parameters__ref-list">Trending now</legend>
+                            <ul class="ref">
+                                <li><a href="#">Bohemian</a></li>
+                                <li><a href="#">Floral</a></li>
+                                <li class="border-none"><a href="#">Lace</a></li>
+                                <li><a href="#">Floral</a></li>
+                                <li><a href="#">Lace</a></li>
+                                <li class="border-none"><a href="#">Bohemian</a></li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset class="checkbox">
+                            <legend class="search-parameters__leg">SIZE</legend>
+
+                            <input id="size_XXS" type="checkbox">
+                            <label for="size_XXS">XXS</label>
+
+                            <input id="size_XS" type="checkbox">
+                            <label for="size_XS">XS</label>
+
+                            <input id="size_S" type="checkbox">
+                            <label for="size_S">S</label>
+
+                            <input id="size_M" type="checkbox">
+                            <label for="size_M">M</label>
+
+                            <input id="size_L" type="checkbox">
+                            <label for="size_L">L</label>
+
+                            <input id="size_XL" type="checkbox">
+                            <label for="size_XL">XL</label>
+
+                            <input id="size_XXL" type="checkbox">
+                            <label for="size_XXL">XXL</label>
+
+                        </fieldset>
+
+                        <fieldset class="range">
+                            <legend class="search-parameters__leg">PRICE</legend>
+                            <input id="range" type="range" min="10" max="400" value="10" step="1">
+
+                            <p class="output_for_range">$
+                                <output name="result" for="range">10</output>
+                            </p>
+                        </fieldset>
+
+                    </div>
+                </form>
+                <div class="show-sort">
+
+                    <p class="sort_by">Sort By</p>
+                    <select id="sort" class="show-sort__select" onclick="changeBgImg(this);" onblur="bgImgGrey(this);">
+                        <option value="name">Name</option>
+                        <option value="price">Price</option>
+                    </select>
+
+                    <p class="show">Show</p>
+                    <select id="show" class="show-sort__select" onclick="changeBgImg(this);" onblur="bgImgGrey(this);">
+                        <option value="09">09</option>
+                        <option value="15">15</option>
+                        <option value="21">21</option>
+                    </select>
+
+                </div>
                 <div class="catalog_items">
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_43.png" alt="t-short">
+                                <img src="img/img-2/Layer_43.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -94,7 +156,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_44.png" alt="t-short">
+                                <img src="img/img-2/Layer_44.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -106,7 +168,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_45.png" alt="t-short">
+                                <img src="img/img-2/Layer_4.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -118,7 +180,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_49.png" alt="t-short">
+                                <img src="img/img-2/Layer_45.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -130,7 +192,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_47.png" alt="t-short">
+                                <img src="img/img-2/Layer_46.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -142,7 +204,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_48.png" alt="t-short">
+                                <img src="img/img-2/Layer_47.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -154,7 +216,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_49.png" alt="t-short">
+                                <img src="img/img-2/Layer_48.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -166,7 +228,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_50.png" alt="t-short">
+                                <img src="img/img-2/Layer_49.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -178,7 +240,7 @@
                     <div class="item">
                         <div class="item_box">
                             <div class="img_box">
-                                <img src="img/img-2/Layer_4.png" alt="t-short">
+                                <img src="img/img-2/Layer_50.png" height="100%" alt="t-short">
                             </div>
                             <a href="#" class="price_box">
                                 <p class="mango">Mango People T-shirt</p>
@@ -187,6 +249,25 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="pagination_view_all">
+                    <ul class="pagination">
+                        <li><a href="#" class="pag_arrow">&lt;</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a class="active pag_arrow" href="#">&gt;</a></li>
+                    </ul>
+                    <a class="view_all_button" href="#">
+                        <div class="view_all">
+                            View All
+                        </div>
+                    </a>
                 </div>
             </div>
             <aside class="select-aside">
@@ -211,40 +292,67 @@
                 <div class="wrapper">
                     <select name="category" id="" class="catalog-select" onclick="changeBgImg(this);" onblur="bgImgGrey(this);">
                         <option value="0" selected disabled hidden style='display: none'>BRAND</option>
-                        <option value="1">Accessories</option>
-                        <option value="2">Bags</option>
-                        <option value="3">Denim</option>
-                        <option value="4">Hoodies & Sweatshirts</option>
-                        <option value="5">Jackets & Coats</option>
-                        <option value="6">Pants</option>
-                        <option value="7">Polos</option>
-                        <option value="8">Shirts</option>
-                        <option value="9">Shoes</option>
-                        <option value="10">Shorts</option>
-                        <option value="11">Sweaters & Knits</option>
-                        <option value="12">T-Shirts</option>
-                        <option value="13">Tanks</option>
+                        <option value="1">Adidas</option>
+                        <option value="2">Puma</option>
+                        <option value="3">Nike</option>
+                        <option value="4">Atomic</option>
+                        <option value="5">Oggi</option>
+                        <option value="6">Sela</option>
+                        <option value="7">Modis</option>
+                        <option value="8">Zorina</option>
                     </select>
                 </div>
                 <div class="wrapper">
                     <select name="category" id="" class="catalog-select" onclick="changeBgImg(this);" onblur="bgImgGrey(this);">
                         <option value="0" selected disabled hidden style='display: none'>dESIGNER</option>
-                        <option value="1">Accessories</option>
-                        <option value="2">Bags</option>
-                        <option value="3">Denim</option>
-                        <option value="4">Hoodies & Sweatshirts</option>
-                        <option value="5">Jackets & Coats</option>
-                        <option value="6">Pants</option>
-                        <option value="7">Polos</option>
-                        <option value="8">Shirts</option>
-                        <option value="9">Shoes</option>
-                        <option value="10">Shorts</option>
-                        <option value="11">Sweaters & Knits</option>
-                        <option value="12">T-Shirts</option>
-                        <option value="13">Tanks</option>
+                        <option value="1">Zaicev</option>
+                        <option value="2">Zverev</option>
+                        <option value="3">Popov</option>
+                        <option value="4">Leonov</option>
+                        <option value="5">Beregnoy</option>
+                        <option value="6">Pol Gogen</option>
+                        <option value="7">Van Gog</option>
                     </select>
                 </div>
             </aside>
+        </div>
+
+        <div class="conditions">
+            <div class="container conditions-wrapper">
+                <a href="#">
+                    <div class="conditions_img">
+                        <img src="img/Forma_1.png" alt="delivery">
+                    </div>
+                    <div class="conditions_prodact_text">
+                        <h3>Free Delivery</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="conditions_img">
+                        <img src="img/Forma_2.png" alt="delivery">
+                    </div>
+                    <div class="conditions_prodact_text">
+                        <h3>Sales &amp; discounts</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="conditions_img">
+                        <img src="img/Forma_3.png" alt="delivery">
+                    </div>
+                    <div class="conditions_prodact_text">
+                        <h3>Quality assurance</h3>
+                        <p>
+                            Worldwide delivery on all. Authorit tively morph next-generation innovation with extensive models.
+                        </p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <div class="slider">
@@ -357,6 +465,7 @@
         var currEl = document.activeElement;
 
         function changeBgImg(el) {
+
             if (!currEl.isSameNode(el)) {
                 i = 0;
             }
@@ -371,14 +480,19 @@
                 i = 0;
             }
             currEl = el;
+
+            //alert("onclick");
+
         }
 
         function bgImgGrey(el) {
             el.style.backgroundImage = "url('img/img-2/arrow_black.png')";
+            i = 0;
+            //alert("onblur");
         }
 
     </script>
-
+   
 </body>
 
 </html>

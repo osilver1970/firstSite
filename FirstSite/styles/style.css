@@ -537,6 +537,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 113px;
+    margin-bottom: 97px;
 }
 
 @media(max-width: 970px) {
@@ -544,13 +545,13 @@ footer {
         flex-wrap: wrap;
     }
 
-    .conditions {
+    .media-conditions {
         max-width: 767px;
     }
 }
 
 @media(min-width: 971px) {
-    .conditions {
+    .media-conditions {
         max-width: 373px;
     }
 }
@@ -744,7 +745,6 @@ footer {
 .slider {
     width: 100%;
     min-height: 438px;
-    margin-top: 97px;
     background-image: url(../img/Rectangle_9_copy.png), url(../img/Layer_41.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -979,15 +979,14 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 846px;
+    width: 859px;
 }
-
-
 
 .catalog {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    padding-bottom: 110px;
 }
 
 
@@ -995,12 +994,14 @@ footer {
 .catalog-select option {
     color: #6f6e6e;
     font-size: 14px;
-    font-weight: 400;
-    border-color: #;
+    font-weight: 500;
+    outline: none;
+    line-height: 
 }
 
 .select-aside {
     width: 243px;
+    padding-top: 36px;
 }
 
 
@@ -1013,15 +1014,17 @@ footer {
     appearance: none;
     background-image: url("../img/img-2/arrow_black.png");
     background-repeat: no-repeat;
-    background-position: 222px;
+    background-position: 95% 50%;
     padding: 0 5px;
     width: 100%;
     color: #6f6e6e;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
+    border-style: none;
     border-left: 5px solid #ef5b70;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    line-height: 37px;
 }
 
 .catalog-select:focus {
@@ -1035,3 +1038,363 @@ footer {
 .wrapper {
     margin-top: 25px;
 }
+
+
+
+.search-parameters {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 71px;
+}
+
+.search-parameters__leg {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+}
+
+output, fieldset p {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    display: inline-block;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: uppercase;
+    width: 60px;
+}
+
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+
+.ref-list {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 63px;
+    padding-left: 0;
+    padding-left: 0;
+}
+
+.search-parameters__ref-list {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ref li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 8px 10px 16px 0;
+    padding-right: 10px;
+    line-height: 12px;
+    border-right: 1px solid #6f6e6e;
+}
+
+.ref li a {
+    text-decoration: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: #f16d7f;
+}
+
+.checkbox {
+    width: 263px;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 263px;
+}
+
+.ref .border-none {
+    border-right: 0px solid white;
+}
+
+.show-sort {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #f3f3f3;
+    margin-bottom: 48px;
+}
+
+.show-sort__select {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url("../img/img-2/arrow_black.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding-right: 10px;
+    padding-left: 15px;
+    height: 30px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    border-style: none;
+    line-height: 30px;
+}
+
+#sort {
+    width: 80px;
+}
+
+#show {
+    width: 58px;
+}
+
+.sort_by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 600;
+    width: 65px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 600;
+    width: 65px;
+    height: 30px; 
+    margin-left: 10px;
+}
+
+ul.pagination {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 7px;
+    text-decoration: none;
+}
+
+.sub-menu__menu li a.active, 
+.pagination li a.active {
+    
+    color: #f16d7f;
+    
+}
+
+ul.pagination li a:hover {
+    
+    color: #f16d7f;
+    
+}
+
+.view_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #ef5b70;
+    background-color: #ffffff;
+    width: 150px;
+    height: 44px;
+}
+
+.pagination_view_all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view_all_button {
+    text-decoration: none;
+    color: #ef5b70;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul.pagination li a.pag_arrow {
+    font-size: 25px;
+}
+
+.conditions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 341px;
+}
+
+.conditions-wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conditions_prodact_text {
+    text-align: center;
+}
+
+/*Стилизация RANGE*/
+
+input[type=range] {
+  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 100%; /* Указание параметра ширины требуется для Firefox. */
+}
+ 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+ 
+input[type=range]:focus {
+  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+ 
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #f16d7f;
+    cursor: pointer;
+    margin-top: -4px;
+}
+ 
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #f16d7f;
+  cursor: pointer;
+}
+ 
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #f16d7f;
+  cursor: pointer;
+}
+
+
+/* Оформление полосы прокрутки */
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+ 
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+ 
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background-color: #f16d7f;
+  border-radius: 3px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+#range {
+    margin-top: 20px;
+}
+
+.output_for_range {
+    margin-top: 20px;
+}
+
+@-moz-document url-prefix() {
+    .output_for_range {
+    margin-top: 0px;
+    padding-bottom: 12px;
+    }
+}
+
+@-moz-document url-prefix() {
+   #range {
+    margin-top: 10px;
+    }
+}
+
+
+

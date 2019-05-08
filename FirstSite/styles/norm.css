@@ -350,3 +350,7 @@ p {
     margin-block-end: 0;
 }
 
+
+.output_for_range {
+    margin-top: 20px;
+}
